@@ -1,6 +1,6 @@
 <h2>Countries</h2>
 <div *ngIf="countries.length" class="countries-container">
-<div *ngFor="let country of countries" class="countries-container__card" style="background-image: url({{country.image}}); background-size: cover; background-position: center" routerLink="{{country.id}}">
+<div *ngFor="let country of countries" class="countries-container__card" style="background-image: url({{country.image}}); background-size: cover; background-position: center" routerLink="{{country._id}}">
 <h6>{{country.name}}</h6>
 </div>
 

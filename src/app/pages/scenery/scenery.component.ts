@@ -15,8 +15,8 @@ export class SceneryComponent implements OnInit {
     this.sceneryService.getAllScenerys().subscribe((data:any)=>{
       const apiResults: SceneryInterface[] = data;
       
-      const formattedScenerys = apiResults.map(({id, name, country, poster})=>({
-        id, name, country, poster
+      const formattedScenerys = apiResults.map(({_id, id, name, country, poster})=>({
+       _id, id, name, country, poster
       }));
       this.scenerys = formattedScenerys
     })

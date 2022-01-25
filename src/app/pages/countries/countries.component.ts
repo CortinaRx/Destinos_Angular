@@ -14,8 +14,8 @@ public countries: CountriesInterface[] = [];
     this.countriesService.getAllCountries().subscribe((data: any) =>{
       const apiResults: CountriesInterface[] = data;
 
-      const formattedCountries = apiResults.map(({id, name, temperature, capitals, population, image, beach}) =>({
-        id, name, temperature, capitals, population, image, beach
+      const formattedCountries = apiResults.map(({_id, id, name, temperature, capitals, population, image, beach}) =>({
+       _id, id, name, temperature, capitals, population, image, beach
       }) );
       this.countries = formattedCountries
     })
