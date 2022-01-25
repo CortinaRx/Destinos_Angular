@@ -1,0 +1,88 @@
+@import "../../../../styles.scss";
+
+*{
+    background-color:#fffffe;
+}
+
+footer {
+    width: 100vw;
+    bottom: 0;
+    height: 40px;
+    margin-top:20px;
+    color:black;
+    @include desktop{
+       width:100%;
+       margin-top:20px;
+    }
+
+
+
+    .footer-container {
+        align-items: center;
+        display: flex;
+        text-align: center;
+        
+        
+        flex-direction: wrap;
+        justify-content: center;
+        padding: 10px;
+        @include desktop{
+            display: flex; 
+            justify-content:center;
+            width: 100vw;
+            height:200px;
+            align-items: center;
+           
+        }
+
+
+        .footer-container__creator{
+            text-align: center;
+            text-transform: uppercase;
+            margin-top:10px;
+            @include desktop{
+                font-size: 40px;
+                margin-bottom:30px;
+                align-items: center;
+                margin-right: 150px;
+            }
+
+
+        }
+
+        .footer_container__img{
+            align-items: center;
+            width: 30px;
+            height: 50px;
+            margin-top:40px;
+            @include desktop{
+               margin-bottom: 50px;
+                width: 200px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                
+            }
+    
+            img{
+                margin-right: 20px;
+                width:20px;
+                height:20px;
+                @include desktop{
+                    width:40px;
+                    height:40px;
+                    margin-left: 120px;
+                    margin-bottom: 2px;
+                }
+                
+            }
+        }
+    
+    }
+
+    
+
+
+
+}
+

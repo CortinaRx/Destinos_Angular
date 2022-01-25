@@ -1,0 +1,7 @@
+<h2>Scenerys</h2>
+<div *ngIf="scenerys.length" class="scenery-container">
+  <div *ngFor="let scenery of scenerys" class="scenery-container__card" style="background-image: url({{scenery.poster}});
+  background-size: cover; background-position: center" routerLink="{{scenery.id}}" >
+<h6>{{scenery.name}}</h6>
+  </div>
+</div>

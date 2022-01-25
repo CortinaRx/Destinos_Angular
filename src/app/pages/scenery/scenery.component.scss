@@ -1,0 +1,87 @@
+@import "../../../styles.scss";
+
+*{
+    background-color: #0f0e17;
+}
+
+
+h6{
+color:#fffffe;
+padding:10px;
+margin:80px;
+border-radius:10px;
+text-transform: uppercase;
+text-align: center;
+background-color:rgba(19, 12, 14, 0.507);
+font-size: 18px;
+justify-content: center;
+@include desktop{
+    
+    justify-content: center;
+    text-align: center;
+    font-size:20px;
+}
+
+
+
+
+}
+
+h2 {
+    color:#fffffe;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 25px;
+    justify-content: center;
+
+    @include desktop{
+        font-size:50px;
+        margin-top:60px;
+        margin-bottom:30px;
+    }
+
+}
+
+.scenery-container{
+background-color:#0f0e17;
+display:flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+flex-wrap: wrap;
+text-align: center;
+@include desktop{
+    flex-direction: row;
+    justify-content:center;
+    text-align: center;
+}
+
+
+
+&__card {
+    border:solid 2px whitesmoke;
+    border-radius: 10px;
+    margin:10px;
+    height: 200px;
+    width: 80%;
+    justify-content:center;
+    text-align:center;
+
+    @include desktop{
+        width: 25%;
+        height: 300px;
+        text-align:center;
+        justify-content:center;
+        margin: 30px;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+
+
+}

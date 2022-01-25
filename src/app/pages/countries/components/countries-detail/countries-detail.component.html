@@ -1,0 +1,21 @@
+<div *ngIf="countries" class="countries-container">
+    <div class="countries-container__card">
+        <h2>{{countries.name}}</h2>
+        <img src="{{countries.image}}" alt="{{countries.name}}" />
+        <p>Temperature: {{countries.temperature}}</p>
+        <p>Capital: {{countries.capitals}}</p>
+        <p>Population: {{countries.population}}</p>
+        <div *ngIf="countries.beach">
+            <p>Beach: </p>
+            <ul>
+                <li *ngFor="let member of countries.beach">
+                    {{member.name}}
+                    
+                </li>
+            </ul>
+        </div>
+        
+
+    
+    </div>
+</div>

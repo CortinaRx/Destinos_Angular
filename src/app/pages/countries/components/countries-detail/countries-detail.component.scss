@@ -1,0 +1,69 @@
+@import "../../../../../styles.scss";
+
+.countries-container{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    @include desktop{
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: #fffffe;
+        @include desktop{
+            font-size: 30px;
+            margin: 10px;
+            margin-bottom: 30px;
+            
+        }
+        
+        
+        
+    }
+    &__card {
+        border: solid 2px whitesmoke;
+        border-radius: 10px;
+        margin:10px;
+        background-color: #0f0e17;
+        width: 80%;
+        @include desktop{
+            border: solid 4px, darkgoldenrod;
+            font-size: 20px;
+            border: none;
+           
+        }
+
+    }
+
+    h2{
+        color:#fffffe;
+    }
+
+    img {
+        width: 80%;
+        border-radius: 10px;
+        border: solid 2px whitesmoke;
+        @include desktop{
+            width: 50%
+        }
+    }
+
+    p{
+        padding: 8px;
+        margin: 8px;
+        color:#fffffe;
+    }
+
+    li{
+        color:#fffffe;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+
+
+
+
+}

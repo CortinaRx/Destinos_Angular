@@ -1,0 +1,36 @@
+@import "../../../styles.scss";
+
+div{
+    width:80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+
+    h1:hover {
+        color:orange
+    }
+    h1{
+        text-shadow: 10px, 7px 9px 2px whitesmoke;
+        margin: 10px;
+    }
+
+    img{
+        width:100%;
+        @include desktop{
+            width:60%;
+            height: 450px;
+        }
+    }
+    p{
+        width: 100%;
+        margin: 10px;
+        @include desktop{
+            width: 60%;
+        }
+    }
+
+
+}
