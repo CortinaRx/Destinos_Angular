@@ -1,27 +1,37 @@
 @import "../../../../styles.scss";
 
 *{
-    background-color:#fffffe;
+    background-color: #6a778f;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");;
 }
 
 .navigator-container{
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
     display: flex;
+    
     @include desktop {
         
     }
     
 
     .navigator-list{
+        
         display: flex;
         flex-direction:space-around;
         width:100%;
         
         @include desktop {
-            justify-content: space-around;
+            justify-content:space-evenly;
            
             
         }
+
+        @include tablet{
+        
+            justify-content:space-around;
+        }
+
+
 
         .navigator-list__item{
             padding:14px;
@@ -40,7 +50,7 @@
             text-decoration:none;
             text-transform:uppercase;
             font-weight: bold;
-            color: black;
+            color: rgb(218, 214, 214);
         
         }
         

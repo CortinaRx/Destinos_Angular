@@ -18,8 +18,20 @@
 
 
     img{
-        width:100%;
+        width:80%;
         justify-content:center;
+        margin: auto;
+
+        @include desktop{
+            width:80%;
+            margin:auto;
+            border-radius:20px;
+        }
+
+        @include tablet{
+            width:70%;
+            margin:auto;
+        }
         
     }
 
@@ -35,11 +47,28 @@
        
     }
 
+    h1:hover{
+        color:orange;
+    }
+
     p{
+        width: 80%;
+        margin: auto;
         margin-top: 20px;
         @include desktop {
             font-size:20px;
-            margin: 35px;
+            
+            width:80%;
+            margin: auto;
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+
+        @include tablet{
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }

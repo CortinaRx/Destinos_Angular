@@ -1,5 +1,8 @@
 @import "../../../../../styles.scss";
-
+*{
+    background-color: #00151f;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
 .countries-container{
     display:flex;
     flex-direction:column;
@@ -25,7 +28,6 @@
         border: solid 2px whitesmoke;
         border-radius: 10px;
         margin:10px;
-        background-color: #0f0e17;
         width: 80%;
         @include desktop{
             border: solid 4px, darkgoldenrod;
