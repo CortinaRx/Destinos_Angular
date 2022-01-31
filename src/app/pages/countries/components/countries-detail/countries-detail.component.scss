@@ -8,6 +8,7 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
     flex-direction:column;
     text-align:center;
     align-items:center;
+ 
     @include desktop{
         margin-top: 20px;
     }
@@ -29,7 +30,7 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
         border-radius: 10px;
         margin:10px;
         width: 80%;
-        margin-bottom: 175px;
+        margin-bottom: 200px;
         @include desktop{
             border: solid 4px, darkgoldenrod;
             font-size: 20px;
