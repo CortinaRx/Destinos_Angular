@@ -31,10 +31,12 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
         margin:10px;
         width: 80%;
         margin-bottom: 200px;
+        margin-top:40px;
         @include desktop{
             border: solid 4px, darkgoldenrod;
             font-size: 20px;
             border: none;
+            
            
         }
 
